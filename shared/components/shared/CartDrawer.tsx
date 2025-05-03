@@ -108,7 +108,7 @@ const CartDrawer: React.FC<PropsWithChildren<Props>> = ({ children }) => {
                     <div className="flex-1 border-b border-dashed border-b-neutral-200 relative -top-1 mx-2" />
                   </span>
 
-                  <span className="font-bold text-lg">{totalAmount} ₽</span>
+                  <span className="font-bold text-lg">{totalAmount} грн</span>
                 </div>
                 <Link href="/checkout">
                   <Button loading={redirecting} onClick={() => setRedirecting(true)} type="submit" className="w-full h-12 text-base">
