@@ -33,7 +33,7 @@ const IngredientItem: React.FC<Props> = ({
       )}
       <img width={110} height={110} src={imageUrl} />
       <span className="text-xs mb-1">{name}</span>
-      <span className="font-bold">{price} ₽</span>
+      <span className="font-bold">{price} грн</span>
     </div>
   );
 };
