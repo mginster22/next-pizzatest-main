@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@theme {
+  --color-foreground: oklch(0.272 0.004 29.29);
+  --color-card: oklch(1 0 0); /* белый */
+  --color-card-foreground: oklch(0.272 0.004 29.29);
+  --color-popover: oklch(1 0 0);
+  --color-popover-foreground: oklch(0.272 0.004 29.29);
+  --color-primary: oklch(0.631 0.235 31.88);
+  --color-primary-foreground: oklch(0.972 0.005 94.72);
+  --color-secondary: oklch(0.988 0.033 80.18);
+  --color-secondary-foreground: oklch(0.201 0.045 63.36);
+  --color-muted: oklch(0.964 0.006 84.84);
+  --color-muted-foreground: oklch(0.427 0.019 59.84);
+  --color-accent: oklch(0.964 0.006 84.84);
+  --color-accent-foreground: oklch(0.201 0.045 63.36);
+  --color-destructive: oklch(0.655 0.213 27.09);
+  --color-destructive-foreground: oklch(0.972 0.005 94.72);
+  --color-border: oklch(0.942 0.009 55.91);
+  --color-input: oklch(0.942 0 0);
+  --color-ring: oklch(0.672 0.236 59.15);
+  --radius-radius: 1rem;
+}
+
+* {
+  font-family: var(--font-nunito), sans-serif;
+  border-color: hsl(var(--border));
+}
+
+body {
+  /* background-color: hsl(var(--background)); */
+  background-color:rgba(0, 0, 0, 0.188);
+  color: hsl(var(--foreground));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 6px;
+  background: #fff;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #dbdadd;
+  border-radius: 6px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #dbdadd;
+}
