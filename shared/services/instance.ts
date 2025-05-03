@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-  baseURL: "https://next-pizzatest-main.vercel.app/api",
+  baseURL: "/api",
   withCredentials: true,
 });
