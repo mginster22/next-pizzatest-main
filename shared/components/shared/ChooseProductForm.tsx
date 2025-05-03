@@ -37,7 +37,7 @@ const ChooseProductForm: React.FC<Props> = ({
           onClick={()=>onSubmit?.()}
           className="h-[55px] px-10 text-base rounded-[18px] w-full mt-10"
         >
-          Добавить в корзину за {price} ₽
+          Добавить в корзину за {price} грн
         </Button>
       </div>
     </div>
